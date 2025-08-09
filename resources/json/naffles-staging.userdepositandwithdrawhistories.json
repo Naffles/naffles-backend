@@ -1,0 +1,312 @@
+[{
+  "_id": {
+    "$oid": "66686f42b35087bd97752607"
+  },
+  "userRef": {
+    "$oid": "666866e9a9407b00082a78ce"
+  },
+  "actionId": {
+    "$oid": "66686f41b35087bd977525fe"
+  },
+  "totalDepositedAmount": {
+    "eth": "8000000000000000",
+    "sol": "0"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-11T15:37:38.592Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-11T15:37:38.592Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ac63fb35087bd97752616"
+  },
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "actionId": {
+    "$oid": "666ac63eb35087bd9775260d"
+  },
+  "totalDepositedAmount": {
+    "eth": "0",
+    "sol": "10000000"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-13T10:13:19.836Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T10:13:19.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d50c0b35087bd97752625"
+  },
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "actionId": {
+    "$oid": "666d50bfb35087bd9775261c"
+  },
+  "totalDepositedAmount": {
+    "eth": "0",
+    "sol": "50000000"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T08:28:48.413Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:28:48.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d5119b35087bd97752631"
+  },
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "actionId": {
+    "$oid": "666d5118b35087bd97752629"
+  },
+  "totalDepositedAmount": {
+    "eth": "0",
+    "sol": "510000000"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T08:30:17.647Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:30:17.647Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d5592b35087bd9775263d"
+  },
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "actionId": {
+    "$oid": "666d5591b35087bd97752635"
+  },
+  "totalDepositedAmount": {
+    "eth": "0",
+    "sol": "511000000"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T08:49:22.126Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:49:22.126Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d62f1b35087bd97752649"
+  },
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "actionId": {
+    "$oid": "666d62f0b35087bd97752641"
+  },
+  "totalDepositedAmount": {
+    "eth": "0",
+    "sol": "521000000"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T09:46:25.417Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T09:46:25.417Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e143ab35087bd97752658"
+  },
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "actionId": {
+    "$oid": "666e1439b35087bd9775264f"
+  },
+  "totalDepositedAmount": {
+    "eth": "15000000000000000",
+    "sol": "0"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T22:22:50.595Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T22:22:50.595Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e18deb35087bd97752668"
+  },
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "actionId": {
+    "$oid": "666e18ddb35087bd9775265f"
+  },
+  "totalDepositedAmount": {
+    "eth": "30000000000000000",
+    "sol": "0"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T22:42:38.971Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T22:42:38.971Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ff84eb35087bd97752674"
+  },
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "actionId": {
+    "$oid": "666ff84db35087bd9775266c"
+  },
+  "totalDepositedAmount": {
+    "eth": "0",
+    "sol": "100000000"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-17T08:48:14.477Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-17T08:48:14.477Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ff869b35087bd97752680"
+  },
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "actionId": {
+    "$oid": "666ff868b35087bd97752678"
+  },
+  "totalDepositedAmount": {
+    "eth": "0",
+    "sol": "571000000"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-17T08:48:41.073Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-17T08:48:41.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66716c72b35087bd9775268e"
+  },
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "actionId": {
+    "$oid": "66716c71b35087bd97752686"
+  },
+  "totalDepositedAmount": {
+    "eth": "35000000000000000",
+    "sol": "0"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-18T11:16:02.081Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T11:16:02.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66716e2eb35087bd9775269a"
+  },
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "actionId": {
+    "$oid": "66716e2db35087bd97752692"
+  },
+  "totalDepositedAmount": {
+    "eth": "35300000000000000",
+    "sol": "0"
+  },
+  "totalWithdrawnAmount": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-18T11:23:26.531Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T11:23:26.531Z"
+  },
+  "__v": 0
+}]

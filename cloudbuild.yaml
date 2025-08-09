@@ -1,0 +1,96 @@
+steps:
+  # Build the container image
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/naffles-418512/naffles-backend:latest", "."]
+
+  # Tag the image with environment-specific tags
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "tag",
+        "gcr.io/naffles-418512/naffles-backend:latest",
+        "gcr.io/naffles-418512/naffles-backend:${BRANCH_NAME}",
+      ]
+
+  # Push the container image to Container Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/naffles-418512/naffles-backend:${BRANCH_NAME}"]
+
+  # Deploy container image to Cloud Run
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      - "run"
+      - "deploy"
+      - "${BRANCH_NAME}-naffles-backend"
+      - "--image"
+      - "gcr.io/naffles-418512/naffles-backend:${BRANCH_NAME}"
+      - "--region"
+      - "australia-southeast1"
+      - "--platform"
+      - "managed"
+      - "--port"
+      - "4000"
+      - "--memory"
+      - "2Gi"
+      - "--cpu"
+      - "2"
+      - "--max-instances"
+      - "10"
+      - "--min-instances"
+      - "1"
+      - "--timeout"
+      - "300"
+      - "--concurrency"
+      - "80"
+      - "--set-env-vars"
+      - "NODE_ENV=${BRANCH_NAME},PORT=4000"
+      - "--allow-unauthenticated"
+
+  # Deploy worker service
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      - "run"
+      - "deploy"
+      - "${BRANCH_NAME}-naffles-worker"
+      - "--image"
+      - "gcr.io/naffles-418512/naffles-backend:${BRANCH_NAME}"
+      - "--region"
+      - "australia-southeast1"
+      - "--platform"
+      - "managed"
+      - "--port"
+      - "4000"
+      - "--memory"
+      - "1Gi"
+      - "--cpu"
+      - "1"
+      - "--max-instances"
+      - "5"
+      - "--min-instances"
+      - "0"
+      - "--timeout"
+      - "900"
+      - "--concurrency"
+      - "1"
+      - "--set-env-vars"
+      - "NODE_ENV=${BRANCH_NAME},PORT=4000,SERVICE_TYPE=worker"
+      - "--no-traffic"
+      - "--command"
+      - "node,utils/worker/index.js"
+
+images:
+  - "gcr.io/naffles-418512/naffles-backend:${BRANCH_NAME}"
+
+# Substitutions for different environments
+substitutions:
+  _SERVICE_NAME: "naffles-backend"
+  _REGION: "australia-southeast1"
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: 'E2_HIGHCPU_8'
+  diskSizeGb: '100'
+
+timeout: '1200s'

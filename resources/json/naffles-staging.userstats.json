@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "666a906a9aeb82ea7d7b57af"
+  },
+  "user": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-13T06:23:38.515Z"
+  },
+  "gamesPlayed": 15,
+  "gamesWon": 7,
+  "rafflesEntered": 0,
+  "totalWinnings": 0,
+  "totalWinningsAsString": "0",
+  "updatedAt": {
+    "$date": "2024-06-16T12:28:56.074Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "666a906a9aeb82ea7d7b57f9"
+  },
+  "user": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-13T06:23:38.664Z"
+  },
+  "gamesPlayed": 15,
+  "rafflesEntered": 0,
+  "totalWinnings": 0,
+  "totalWinningsAsString": "0",
+  "updatedAt": {
+    "$date": "2024-06-16T12:28:55.933Z"
+  },
+  "gamesWon": 8
+},
+{
+  "_id": {
+    "$oid": "666e197a9aeb82ea7d95a082"
+  },
+  "user": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-15T22:45:14.799Z"
+  },
+  "gamesPlayed": 27,
+  "gamesWon": 21,
+  "rafflesEntered": 0,
+  "totalWinnings": 0,
+  "totalWinningsAsString": "0",
+  "updatedAt": {
+    "$date": "2024-06-16T06:36:00.502Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "666e197b9aeb82ea7d95a0a6"
+  },
+  "user": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-15T22:45:14.947Z"
+  },
+  "gamesPlayed": 27,
+  "rafflesEntered": 0,
+  "totalWinnings": 0,
+  "totalWinningsAsString": "0",
+  "updatedAt": {
+    "$date": "2024-06-16T06:36:00.645Z"
+  },
+  "gamesWon": 6
+}]

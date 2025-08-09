@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "66717c3cc5ace1002a9cf8cc"
+  },
+  "amount": "200000",
+  "status": "rejected",
+  "userRef": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "toAddress": "EB6kG6heex5GDX55hanmUXsh6M5gdNeeNcifPL6pNgHa",
+  "coinType": "sol",
+  "network": "sol",
+  "currentTreasuryBalance": "1100000",
+  "currentUserTotalDeposited": "1000000",
+  "currentUserTotalWithdrawn": "0",
+  "trackingNumber": 1,
+  "createdAt": {
+    "$date": "2024-06-18T12:23:24.768Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T12:38:27.076Z"
+  },
+  "__v": 0
+}]

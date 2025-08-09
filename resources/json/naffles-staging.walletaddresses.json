@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "66686f29a9407b00082a7911"
+  },
+  "userRef": {
+    "$oid": "666866e9a9407b00082a78ce"
+  },
+  "address": "0x1215c2eD172F0b15D2102f80cE119d01634e03a3",
+  "walletType": "metamask",
+  "network": "eth",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d4da7a9407b00082a7fcb"
+  },
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "address": "349zqVuRDKzEm9xu6pQjRZneCkjiCiUZ8RmNw3eRDLoo",
+  "walletType": "phantom",
+  "network": "sol",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d4e1ea9407b00082a7ffb"
+  },
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "address": "EZDSJaFGjpnaYjC15yY1QgkxfiEo5XBhpRZzqQjgCTD3",
+  "walletType": "phantom",
+  "network": "sol",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e1588f890d40008397558"
+  },
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "address": "0x58474FdBFA9DE3aa626775019EcC21C77c59174a",
+  "walletType": "metamask",
+  "network": "eth",
+  "__v": 0
+}]

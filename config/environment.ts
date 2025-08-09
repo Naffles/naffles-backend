@@ -1,0 +1,463 @@
+import dotenv from 'dotenv';
+import path from 'path';
+
+/**
+ * Environment configuration management for different deployment stages
+ * 
+ * This module provides centralized configuration management for the Naffles backend application.
+ * It supports multiple deployment environments (development, staging, production, localhost)
+ * and automatically loads environment-specific configuration files.
+ * 
+ * Features:
+ * - Environment detection and validation
+ * - Type-safe configuration interfaces
+ * - Environment-specific .env file loading
+ * - Configuration validation and error reporting
+ * - Singleton pattern for consistent configuration access
+ * 
+ * Usage:
+ * ```typescript
+ * import { environmentManager } from './config/environment';
+ * 
+ * const config = environmentManager.getConfig();
+ * const dbConfig = environmentManager.getDatabaseConfig();
+ * const isProduction = environmentManager.isProduction();
+ * ```
+ * 
+ * Environment Files:
+ * - .env.development - Local development configuration
+ * - .env.staging - Staging environment configuration  
+ * - .env.production - Production environment configuration
+ * - .env.localhost - Local testing configuration
+ * 
+ * @author Naffles Development Team
+ * @version 1.0.0
+ */
+
+export type Environment = 'development' | 'staging' | 'production' | 'localhost';
+
+export interface DatabaseConfig {
+  url: string;
+  options: {
+    maxPoolSize: number;
+    serverSelectionTimeoutMS: number;
+    socketTimeoutMS: number;
+    bufferCommands: boolean;
+    bufferMaxEntries: number;
+    autoIndex: boolean;
+  };
+}
+
+export interface RedisConfig {
+  host: string;
+  port: number;
+  password?: string;
+  db: number;
+  retryDelayOnFailover: number;
+  maxRetriesPerRequest: number;
+  lazyConnect: boolean;
+}
+
+export interface ServerConfig {
+  port: number;
+  host: string;
+  cors: {
+    origins: string[];
+    credentials: boolean;
+  };
+  session: {
+    secret: string;
+    secure: boolean;
+    httpOnly: boolean;
+    maxAge: number;
+  };
+}
+
+export interface BlockchainConfig {
+  ethereum: {
+    rpcUrl: string;
+    treasuryWallet: string;
+    treasuryPrivateKey: string;
+  };
+  solana: {
+    rpcUrl: string;
+    treasuryWallet: string;
+    treasuryPrivateKey: string;
+  };
+  polygon: {
+    rpcUrl: string;
+    treasuryWallet: string;
+    treasuryPrivateKey: string;
+  };
+  base: {
+    rpcUrl: string;
+    treasuryWallet: string;
+    treasuryPrivateKey: string;
+  };
+}
+
+export interface ExternalServicesConfig {
+  alchemy: {
+    apiKey: string;
+    networks: string[];
+  };
+  coingecko: {
+    apiKey?: string;
+  };
+  chainlink: {
+    ethereum: {
+      coordinator: string;
+      keyHash: string;
+      subscriptionId: string;
+    };
+    polygon: {
+      coordinator: string;
+      keyHash: string;
+      subscriptionId: string;
+    };
+  };
+}
+
+export interface AppConfig {
+  environment: Environment;
+  database: DatabaseConfig;
+  redis: RedisConfig;
+  server: ServerConfig;
+  blockchain: BlockchainConfig;
+  externalServices: ExternalServicesConfig;
+  logging: {
+    level: string;
+    enableConsole: boolean;
+    enableFile: boolean;
+  };
+  security: {
+    rateLimiting: {
+      windowMs: number;
+      maxRequests: number;
+    };
+    encryption: {
+      algorithm: string;
+      secretKey: string;
+    };
+  };
+}
+
+/**
+ * Environment configuration manager
+ */
+class EnvironmentManager {
+  private static instance: EnvironmentManager;
+  private config: AppConfig | null = null;
+  private environment: Environment;
+
+  private constructor() {
+    this.environment = this.detectEnvironment();
+    this.loadEnvironmentFile();
+  }
+
+  public static getInstance(): EnvironmentManager {
+    if (!EnvironmentManager.instance) {
+      EnvironmentManager.instance = new EnvironmentManager();
+    }
+    return EnvironmentManager.instance;
+  }
+
+  /**
+   * Detect current environment
+   */
+  private detectEnvironment(): Environment {
+    const nodeEnv = process.env.NODE_ENV?.toLowerCase();
+    
+    switch (nodeEnv) {
+      case 'development':
+        return 'development';
+      case 'staging':
+        return 'staging';
+      case 'production':
+        return 'production';
+      case 'localhost':
+        return 'localhost';
+      default:
+        return 'development';
+    }
+  }
+
+  /**
+   * Load environment-specific .env file
+   */
+  private loadEnvironmentFile(): void {
+    const envFile = `.env.${this.environment}`;
+    const envPath = path.resolve(process.cwd(), envFile);
+    
+    try {
+      dotenv.config({ path: envPath });
+      console.log(`Loaded environment configuration from ${envFile}`);
+    } catch (error) {
+      console.warn(`Could not load ${envFile}, falling back to default .env`);
+      dotenv.config();
+    }
+  }
+
+  /**
+   * Get current environment
+   */
+  public getEnvironment(): Environment {
+    return this.environment;
+  }
+
+  /**
+   * Check if running in development
+   */
+  public isDevelopment(): boolean {
+    return this.environment === 'development' || this.environment === 'localhost';
+  }
+
+  /**
+   * Check if running in production
+   */
+  public isProduction(): boolean {
+    return this.environment === 'production';
+  }
+
+  /**
+   * Check if running in staging
+   */
+  public isStaging(): boolean {
+    return this.environment === 'staging';
+  }
+
+  /**
+   * Get required environment variable
+   */
+  private getRequiredEnv(key: string): string {
+    const value = process.env[key];
+    if (!value) {
+      throw new Error(`Required environment variable ${key} is not set`);
+    }
+    return value;
+  }
+
+  /**
+   * Get optional environment variable with default
+   */
+  private getOptionalEnv(key: string, defaultValue: string): string {
+    return process.env[key] || defaultValue;
+  }
+
+  /**
+   * Get configuration for current environment
+   */
+  public getConfig(): AppConfig {
+    if (this.config) {
+      return this.config;
+    }
+
+    this.config = {
+      environment: this.environment,
+      
+      database: {
+        url: this.getRequiredEnv('MONGO_URL'),
+        options: {
+          maxPoolSize: parseInt(this.getOptionalEnv('MONGO_MAX_POOL_SIZE', '10')),
+          serverSelectionTimeoutMS: parseInt(this.getOptionalEnv('MONGO_SERVER_SELECTION_TIMEOUT', '5000')),
+          socketTimeoutMS: parseInt(this.getOptionalEnv('MONGO_SOCKET_TIMEOUT', '45000')),
+          bufferCommands: false,
+          bufferMaxEntries: 0,
+          autoIndex: !this.isProduction(),
+        }
+      },
+
+      redis: {
+        host: this.getOptionalEnv('REDIS_URL', 'redis'),
+        port: parseInt(this.getOptionalEnv('REDIS_PORT', '6379')),
+        password: process.env.REDIS_PASSWORD,
+        db: parseInt(this.getOptionalEnv('REDIS_DB', '0')),
+        retryDelayOnFailover: 100,
+        maxRetriesPerRequest: 3,
+        lazyConnect: true,
+      },
+
+      server: {
+        port: parseInt(this.getOptionalEnv('PORT', '3000')),
+        host: this.getOptionalEnv('HOST', '0.0.0.0'),
+        cors: {
+          origins: this.getCorsOrigins(),
+          credentials: true,
+        },
+        session: {
+          secret: this.getRequiredEnv('SESSION_SECRET'),
+          secure: !this.isDevelopment(),
+          httpOnly: !this.isDevelopment(),
+          maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+        }
+      },
+
+      blockchain: {
+        ethereum: {
+          rpcUrl: this.getOptionalEnv('ETHEREUM_RPC_URL', 'https://eth-mainnet.alchemyapi.io/v2/'),
+          treasuryWallet: this.getOptionalEnv('ETH_TREASURY_WALLET', ''),
+          treasuryPrivateKey: this.getOptionalEnv('ETH_TREASURY_PRIVATE_KEY', ''),
+        },
+        solana: {
+          rpcUrl: this.getOptionalEnv('SOLANA_RPC_URL', 'https://api.mainnet-beta.solana.com'),
+          treasuryWallet: this.getOptionalEnv('SOL_TREASURY_WALLET', ''),
+          treasuryPrivateKey: this.getOptionalEnv('SOL_TREASURY_PRIVATE_KEY', ''),
+        },
+        polygon: {
+          rpcUrl: this.getOptionalEnv('POLYGON_RPC_URL', 'https://polygon-rpc.com'),
+          treasuryWallet: this.getOptionalEnv('POLYGON_TREASURY_WALLET', ''),
+          treasuryPrivateKey: this.getOptionalEnv('POLYGON_TREASURY_PRIVATE_KEY', ''),
+        },
+        base: {
+          rpcUrl: this.getOptionalEnv('BASE_RPC_URL', 'https://mainnet.base.org'),
+          treasuryWallet: this.getOptionalEnv('BASE_TREASURY_WALLET', ''),
+          treasuryPrivateKey: this.getOptionalEnv('BASE_TREASURY_PRIVATE_KEY', ''),
+        },
+      },
+
+      externalServices: {
+        alchemy: {
+          apiKey: this.getOptionalEnv('ALCHEMY_API_KEY', ''),
+          networks: this.getOptionalEnv('EVM_NETWORKS', 'sepolia').split(','),
+        },
+        coingecko: {
+          apiKey: process.env.COINGECKO_API_KEY,
+        },
+        chainlink: {
+          ethereum: {
+            coordinator: this.getOptionalEnv('ETH_VRF_COORDINATOR', ''),
+            keyHash: this.getOptionalEnv('ETH_VRF_KEY_HASH', ''),
+            subscriptionId: this.getOptionalEnv('ETH_VRF_SUBSCRIPTION_ID', ''),
+          },
+          polygon: {
+            coordinator: this.getOptionalEnv('POLYGON_VRF_COORDINATOR', ''),
+            keyHash: this.getOptionalEnv('POLYGON_VRF_KEY_HASH', ''),
+            subscriptionId: this.getOptionalEnv('POLYGON_VRF_SUBSCRIPTION_ID', ''),
+          },
+        },
+      },
+
+      logging: {
+        level: this.getOptionalEnv('LOG_LEVEL', this.isDevelopment() ? 'debug' : 'info'),
+        enableConsole: true,
+        enableFile: this.isProduction(),
+      },
+
+      security: {
+        rateLimiting: {
+          windowMs: parseInt(this.getOptionalEnv('RATE_LIMIT_WINDOW_MS', '60000')),
+          maxRequests: parseInt(this.getOptionalEnv('RATE_LIMIT_MAX_REQUESTS', '1000')),
+        },
+        encryption: {
+          algorithm: 'aes-256-gcm',
+          secretKey: this.getRequiredEnv('ENCRYPTION_SECRET_KEY'),
+        },
+      },
+    };
+
+    return this.config;
+  }
+
+  /**
+   * Get CORS origins based on environment
+   */
+  private getCorsOrigins(): string[] {
+    const baseOrigins = [
+      'http://localhost:3000',
+      'http://localhost:3001',
+    ];
+
+    switch (this.environment) {
+      case 'development':
+        return [
+          ...baseOrigins,
+          'https://dev.naffles.com',
+          'https://dev.admin.naffles.com',
+        ];
+      case 'staging':
+        return [
+          ...baseOrigins,
+          'https://staging.naffles.com',
+          'https://staging.admin.naffles.com',
+        ];
+      case 'production':
+        return [
+          'https://www.naffles.com',
+          'https://naffles.com',
+          'https://admin.naffles.com',
+        ];
+      default:
+        return baseOrigins;
+    }
+  }
+
+  /**
+   * Validate configuration
+   */
+  public validateConfig(): { isValid: boolean; errors: string[] } {
+    const errors: string[] = [];
+    const config = this.getConfig();
+
+    // Validate required database configuration
+    if (!config.database.url) {
+      errors.push('Database URL is required');
+    }
+
+    // Validate session secret
+    if (!config.server.session.secret) {
+      errors.push('Session secret is required');
+    }
+
+    // Validate encryption key
+    if (!config.security.encryption.secretKey) {
+      errors.push('Encryption secret key is required');
+    }
+
+    // Validate blockchain configuration for production
+    if (this.isProduction()) {
+      if (!config.blockchain.ethereum.treasuryPrivateKey) {
+        errors.push('Ethereum treasury private key is required in production');
+      }
+      if (!config.blockchain.solana.treasuryPrivateKey) {
+        errors.push('Solana treasury private key is required in production');
+      }
+    }
+
+    return {
+      isValid: errors.length === 0,
+      errors
+    };
+  }
+
+  /**
+   * Get database configuration
+   */
+  public getDatabaseConfig(): DatabaseConfig {
+    return this.getConfig().database;
+  }
+
+  /**
+   * Get Redis configuration
+   */
+  public getRedisConfig(): RedisConfig {
+    return this.getConfig().redis;
+  }
+
+  /**
+   * Get server configuration
+   */
+  public getServerConfig(): ServerConfig {
+    return this.getConfig().server;
+  }
+
+  /**
+   * Get blockchain configuration
+   */
+  public getBlockchainConfig(): BlockchainConfig {
+    return this.getConfig().blockchain;
+  }
+}
+
+// Export singleton instance
+export const environmentManager = EnvironmentManager.getInstance();
+export default environmentManager;

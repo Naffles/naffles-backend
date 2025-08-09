@@ -1,0 +1,1092 @@
+[{
+  "_id": {
+    "$oid": "666a906afd55050008ccc155"
+  },
+  "winner": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "1000000000000000000",
+  "odds": "1",
+  "payout": "2000000000000000000",
+  "createdAt": {
+    "$date": "2024-06-13T06:23:38.363Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T06:23:38.363Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666a908e81548000088767b7"
+  },
+  "winner": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "1000000000000000000",
+  "odds": "1",
+  "payout": "2000000000000000000",
+  "createdAt": {
+    "$date": "2024-06-13T06:24:14.897Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T06:24:14.897Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666a90b381548000088767d6"
+  },
+  "winner": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "1000000000000000000",
+  "odds": "1",
+  "payout": "2000000000000000000",
+  "createdAt": {
+    "$date": "2024-06-13T06:24:51.805Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T06:24:51.805Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666a97cbf890d40008396bd7"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "1000000000000000000",
+  "odds": "1",
+  "payout": "2000000000000000000",
+  "createdAt": {
+    "$date": "2024-06-13T06:55:07.139Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T06:55:07.139Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666a97fff890d40008396bea"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "1000000000000000000",
+  "odds": "1",
+  "payout": "2000000000000000000",
+  "createdAt": {
+    "$date": "2024-06-13T06:55:59.432Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T06:55:59.432Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666a9849f890d40008396bfe"
+  },
+  "winner": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "1000000000000000000",
+  "odds": "1",
+  "payout": "2000000000000000000",
+  "createdAt": {
+    "$date": "2024-06-13T06:57:13.065Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T06:57:13.065Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d51bef890d400083970f3"
+  },
+  "winner": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "creator": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "challenger": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "1",
+  "payout": "200000",
+  "createdAt": {
+    "$date": "2024-06-15T08:33:02.096Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:33:02.096Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d5287fd55050008ccc7ac"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "1",
+  "payout": "200000",
+  "createdAt": {
+    "$date": "2024-06-15T08:36:23.565Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:36:23.565Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d5721f890d40008397192"
+  },
+  "winner": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "creator": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "challenger": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "20000000",
+  "odds": "2",
+  "payout": "30000000",
+  "createdAt": {
+    "$date": "2024-06-15T08:56:01.343Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:56:01.343Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d577ef890d400083971b0"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "challenger": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "20000000",
+  "odds": "2",
+  "payout": "30000000",
+  "createdAt": {
+    "$date": "2024-06-15T08:57:34.394Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:57:34.394Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e197aa9407b00082a849d"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-15T22:45:14.650Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T22:45:14.650Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e199fa9407b00082a84b0"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-15T22:45:51.918Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T22:45:51.918Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e1e88a9407b00082a84be"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-15T23:06:48.243Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T23:06:48.243Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e1ea1a9407b00082a84e2"
+  },
+  "winner": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-15T23:07:13.341Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T23:07:13.341Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e76f38154800008877233"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:24:03.030Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:24:03.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7716815480000887724c"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:24:38.849Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:24:38.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e77378154800008877264"
+  },
+  "winner": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:25:11.931Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:25:11.931Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e77718154800008877289"
+  },
+  "winner": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:26:09.184Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:26:09.184Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7c08a9407b00082a861a"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "100000000000000",
+  "odds": "10",
+  "payout": "110000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:45:44.948Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:45:44.948Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7c308154800008877310"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:46:24.865Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:46:24.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7c69a9407b00082a8632"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:47:21.042Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:47:21.042Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7c9ba9407b00082a863e"
+  },
+  "winner": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:48:11.965Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:48:11.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7cbf8154800008877320"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:48:47.817Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:48:47.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7cd4815480000887732c"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:49:08.113Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:49:08.113Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7cefa9407b00082a864e"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:49:35.495Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:49:35.495Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7d0a815480000887733f"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:50:02.489Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:50:02.489Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7d21815480000887734b"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:50:25.948Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:50:25.948Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7d3a8154800008877357"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "200000000000000",
+  "odds": "2",
+  "payout": "300000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T05:50:50.687Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T05:50:50.687Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e80448154800008877369"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "500000000000000",
+  "odds": "2",
+  "payout": "750000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:03:48.594Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:03:48.594Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e806ba9407b00082a8673"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "500000000000000",
+  "odds": "2",
+  "payout": "750000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:04:27.633Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:04:27.633Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8087815480000887737c"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "challenger": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "500000000000000",
+  "odds": "2",
+  "payout": "750000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:04:55.741Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:04:55.741Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e80dda9407b00082a86c6"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "6000000000000000",
+  "odds": "3",
+  "payout": "8000000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:06:21.931Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:06:21.931Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e80fca9407b00082a86d9"
+  },
+  "winner": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "6000000000000000",
+  "odds": "3",
+  "payout": "8000000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:06:52.389Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:06:52.389Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8121a9407b00082a86f1"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "6000000000000000",
+  "odds": "3",
+  "payout": "8000000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:07:29.465Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:07:29.465Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8175a9407b00082a8714"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "6000000000000000",
+  "odds": "3",
+  "payout": "8000000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:08:53.406Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:08:53.406Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8192a9407b00082a8727"
+  },
+  "winner": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "6000000000000000",
+  "odds": "3",
+  "payout": "8000000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:09:22.502Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:09:22.502Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e87d0815480000887745a"
+  },
+  "winner": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "creator": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "challenger": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "gameType": "coinToss",
+  "coinType": "eth",
+  "betAmount": "4500000000000000",
+  "odds": "3",
+  "payout": "6000000000000000",
+  "createdAt": {
+    "$date": "2024-06-16T06:36:00.356Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:36:00.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ed9fff890d400083978b8"
+  },
+  "winner": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "coinToss",
+  "coinType": "sol",
+  "betAmount": "1000000",
+  "odds": "2",
+  "payout": "1500000",
+  "createdAt": {
+    "$date": "2024-06-16T12:26:39.395Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T12:26:39.395Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666eda32f890d400083978f6"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "coinToss",
+  "coinType": "sol",
+  "betAmount": "1000000",
+  "odds": "2",
+  "payout": "1500000",
+  "createdAt": {
+    "$date": "2024-06-16T12:27:30.640Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T12:27:30.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666eda55f890d40008397909"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "coinToss",
+  "coinType": "sol",
+  "betAmount": "1000000",
+  "odds": "2",
+  "payout": "1500000",
+  "createdAt": {
+    "$date": "2024-06-16T12:28:05.990Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T12:28:05.990Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666eda6ef890d40008397917"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "coinToss",
+  "coinType": "sol",
+  "betAmount": "1000000",
+  "odds": "2",
+  "payout": "1500000",
+  "createdAt": {
+    "$date": "2024-06-16T12:28:30.443Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T12:28:30.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666eda87f890d40008397925"
+  },
+  "winner": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "creator": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "challenger": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "gameType": "coinToss",
+  "coinType": "sol",
+  "betAmount": "1000000",
+  "odds": "2",
+  "payout": "1500000",
+  "createdAt": {
+    "$date": "2024-06-16T12:28:55.792Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T12:28:55.792Z"
+  },
+  "__v": 0
+}]

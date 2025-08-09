@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "6671672e6ac10d002a6e4daf"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "username": "lonelysigner574_1718706997292",
+  "message": "hello!",
+  "timestamp": {
+    "$date": "2024-06-18T10:53:34.201Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66716738aef0c1002bcdb11b"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "66716590308611002bf43bc8"
+  },
+  "username": "singlevasectomy794_1718707600399",
+  "message": "We are on beta!",
+  "timestamp": {
+    "$date": "2024-06-18T10:53:44.887Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66716957214bb9002b77e09d"
+  },
+  "profileImage": "uploads/profile-pictures/image 120.webp",
+  "userRef": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "username": "lonelysigner574_1718706997292",
+  "message": "see my new profile image!",
+  "timestamp": {
+    "$date": "2024-06-18T11:02:47.232Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66716edc214bb9002b77e12d"
+  },
+  "profileImage": "uploads/profile-pictures/image 120.webp",
+  "userRef": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "username": "lonelysigner574_1718706997292",
+  "message": "",
+  "timestamp": {
+    "$date": "2024-06-18T11:26:20.233Z"
+  },
+  "game": {
+    "$oid": "66716edcaef0c1002bcdb1f5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66716fa06ac10d002a6e4e9f"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "username": "iamgroot",
+  "message": "ey",
+  "timestamp": {
+    "$date": "2024-06-18T11:29:36.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717120c5ace1002a9cf797"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "66715f38f98d0e002b9ff648"
+  },
+  "username": "third-floormannerism865_1718705975828",
+  "message": "test",
+  "timestamp": {
+    "$date": "2024-06-18T11:36:00.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717126c5ace1002a9cf79b"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "66715f38f98d0e002b9ff648"
+  },
+  "username": "third-floormannerism865_1718705975828",
+  "message": "hello",
+  "timestamp": {
+    "$date": "2024-06-18T11:36:06.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66718084845893002c2d3f0f"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "6671748105c069002b487585"
+  },
+  "username": "blindfoam379_1718711424582",
+  "message": "Woot",
+  "timestamp": {
+    "$date": "2024-06-18T12:41:40.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671808b845893002c2d3f13"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "6671748105c069002b487585"
+  },
+  "username": "blindfoam379_1718711424582",
+  "message": "Is the platform live?",
+  "timestamp": {
+    "$date": "2024-06-18T12:41:47.782Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671809c845893002c2d3f17"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "6671748105c069002b487585"
+  },
+  "username": "blindfoam379_1718711424582",
+  "message": "We all look like Nafflings",
+  "timestamp": {
+    "$date": "2024-06-18T12:42:04.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671845fd9ee2c002b81d5d5"
+  },
+  "profileImage": "uploads/profile-pictures/1691871730624.webp",
+  "userRef": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "username": "helloworld",
+  "message": "not me",
+  "timestamp": {
+    "$date": "2024-06-18T12:58:07.550Z"
+  },
+  "__v": 0
+}]

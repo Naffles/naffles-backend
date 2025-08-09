@@ -1,0 +1,208 @@
+[{
+  "_id": {
+    "$oid": "667166c2e36639002bf28e2f"
+  },
+  "winner": {
+    "$oid": "66716590308611002bf43bc8"
+  },
+  "creator": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "challenger": {
+    "$oid": "66716590308611002bf43bc8"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-18T10:51:46.176Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T10:51:46.176Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667166e4e36639002bf28e47"
+  },
+  "winner": {
+    "$oid": "66716590308611002bf43bc8"
+  },
+  "creator": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "challenger": {
+    "$oid": "66716590308611002bf43bc8"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "points",
+  "betAmount": "100000000000000",
+  "odds": "1",
+  "payout": "200000000000000",
+  "createdAt": {
+    "$date": "2024-06-18T10:52:20.946Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T10:52:20.946Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717d22c5ace1002a9cf915"
+  },
+  "winner": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "creator": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "challenger": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "gameType": "coinToss",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "4",
+  "payout": "125000",
+  "createdAt": {
+    "$date": "2024-06-18T12:27:14.927Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T12:27:14.927Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717d7ec5ace1002a9cf942"
+  },
+  "winner": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "creator": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "challenger": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "1",
+  "payout": "200000",
+  "createdAt": {
+    "$date": "2024-06-18T12:28:46.865Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T12:28:46.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717da9c5ace1002a9cf957"
+  },
+  "winner": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "creator": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "challenger": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "1",
+  "payout": "200000",
+  "createdAt": {
+    "$date": "2024-06-18T12:29:29.353Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T12:29:29.353Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717e2a8eaec0002b517458"
+  },
+  "winner": {
+    "$oid": "66715f38f98d0e002b9ff648"
+  },
+  "creator": {
+    "$oid": "66715f38f98d0e002b9ff648"
+  },
+  "challenger": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "1",
+  "payout": "200000",
+  "createdAt": {
+    "$date": "2024-06-18T12:31:38.049Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T12:31:38.049Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717e9bc5ace1002a9cf9bd"
+  },
+  "winner": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "creator": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "challenger": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "gameType": "rockPaperScissors",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "2",
+  "payout": "150000",
+  "createdAt": {
+    "$date": "2024-06-18T12:33:31.983Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T12:33:31.983Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667184b0299f4f002b374a86"
+  },
+  "winner": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "creator": {
+    "$oid": "6671836ed9ee2c002b81d573"
+  },
+  "challenger": {
+    "$oid": "66716c250820b2002b0c0590"
+  },
+  "gameType": "coinToss",
+  "coinType": "sol",
+  "betAmount": "100000",
+  "odds": "1",
+  "payout": "200000",
+  "createdAt": {
+    "$date": "2024-06-18T12:59:28.442Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T12:59:28.442Z"
+  },
+  "__v": 0
+}]

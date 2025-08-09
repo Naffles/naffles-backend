@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "666866e9a9407b00082a78ce"
+  },
+  "temporaryPoints": "10000000000000000000",
+  "temporaryPointsAsNumber": 10,
+  "profileImage": "",
+  "role": "user",
+  "email": "gonzales.raymond.a@gmail.com",
+  "username": "immigrantabsence200_1718118120832",
+  "password": "$2a$12$6IiPJ/pg15ooC.CRenjN7OqgMTdYsprOWpxgKufS5JDG8ltW4ZxfO",
+  "createdAt": {
+    "$date": "2024-06-11T15:02:01.301Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-11T15:02:25.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6669a809f890d4000839694c"
+  },
+  "temporaryPoints": "0",
+  "temporaryPointsAsNumber": 0,
+  "profileImage": "",
+  "role": "admin",
+  "email": "Jaymail75@gmail.com",
+  "username": "fetaloptimism800_1718200328642",
+  "password": "$2a$12$TXuTNmWIykLfYN.QPDAzr.8kCPHUZtfHes77PdzrjgBcJNA60wxFy",
+  "createdAt": {
+    "$date": "2024-06-12T13:52:09.096Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-12T13:52:09.096Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "temporaryPoints": "27000000000000000000",
+  "temporaryPointsAsNumber": 27,
+  "profileImage": "",
+  "role": "user",
+  "email": "miraadatest1@gmail.com",
+  "username": "al_test1",
+  "password": "$2a$12$koX8jhfmGCp8dTD9uWkfbeTvTEfsabgvzEvtK/7OUTx/wilEVfpcO",
+  "createdAt": {
+    "$date": "2024-06-13T05:33:32.214Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T12:30:49.033Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "temporaryPoints": "18000000000000000000",
+  "temporaryPointsAsNumber": 18,
+  "profileImage": "",
+  "role": "user",
+  "email": "a.abarca@prostrive.io",
+  "username": "rabidapocalypse375_1718259671412",
+  "password": "$2a$12$PG4KUbwMDvHh7SB4zlPibOyzqlpxSG7If7hqv2ED0O2dSA3bHAnaG",
+  "createdAt": {
+    "$date": "2024-06-13T06:21:11.871Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-13T06:57:02.498Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "temporaryPoints": "0",
+  "temporaryPointsAsNumber": 0,
+  "profileImage": "uploads/profile-pictures/images.webp",
+  "role": "user",
+  "email": "g.caibog@prostrive.io",
+  "username": "hinddoormann48051718",
+  "password": "$2a$12$pv5tZRe4/HMbSqJYld2c2.ByWbHKXfRBw.9pqTau.zaTrqYo2wMwS",
+  "createdAt": {
+    "$date": "2024-06-15T22:12:40.630Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:59:33.931Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "temporaryPoints": "0",
+  "temporaryPointsAsNumber": 0,
+  "profileImage": "",
+  "role": "user",
+  "email": "gracecaibog@gmail.com",
+  "username": "sandycinch409_1718490002790",
+  "password": "$2a$12$0Pqh/5hpazZbR84RO3yUGugyKYywWKvlnlSjWenveb6v10wTARsIu",
+  "createdAt": {
+    "$date": "2024-06-15T22:20:03.238Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T22:20:03.238Z"
+  },
+  "__v": 0
+}]

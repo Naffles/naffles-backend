@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naffles Games - iFrame Integration Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .game-selector {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .game-selector select, .game-selector input, .game-selector button {
+            margin: 5px;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .game-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .game-container::before {
+            content: '';
+            display: block;
+            padding-top: 75%; /* 4:3 aspect ratio */
+        }
+        
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        
+        .controls button {
+            margin: 5px;
+            padding: 8px 16px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .controls button:hover {
+            background: #0056b3;
+        }
+        
+        .log {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        
+        .log-entry {
+            margin: 2px 0;
+            padding: 2px 5px;
+            border-left: 3px solid #007bff;
+        }
+        
+        .log-entry.error {
+            border-left-color: #dc3545;
+            background: #f8d7da;
+        }
+        
+        .log-entry.success {
+            border-left-color: #28a745;
+            background: #d4edda;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Naffles Games - iFrame Integration Demo</h1>
+        
+        <div class="game-selector">
+            <h3>Game Configuration</h3>
+            <select id="gameType">
+                <option value="blackjack">Blackjack</option>
+                <option value="coinToss">Coin Toss</option>
+                <option value="rockPaperScissors">Rock Paper Scissors</option>
+            </select>
+            
+            <input type="text" id="betAmount" placeholder="Bet Amount" value="1000000000000000000">
+            <input type="text" id="tokenType" placeholder="Token Type" value="points">
+            
+            <button onclick="loadGame()">Load Game</button>
+            <button onclick="clearLog()">Clear Log</button>
+        </div>
+        
+        <div class="game-container" id="gameContainer">
+            <p style="text-align: center; padding: 50px;">Select a game and click "Load Game" to start</p>
+        </div>
+        
+        <div class="controls">
+            <h3>Game Controls</h3>
+            <button onclick="sendGameMessage('REQUEST_GAME_STATE', {})">Get Game State</button>
+            <button onclick="sendGameMessage('PAUSE_GAME', {})">Pause Game</button>
+            <button onclick="sendGameMessage('RESUME_GAME', {})">Resume Game</button>
+            <button onclick="sendGameMessage('END_GAME', {})">End Game</button>
+        </div>
+        
+        <div class="log" id="messageLog">
+            <div class="log-entry">Ready to load games...</div>
+        </div>
+    </div>
+
+    <script>
+        let currentGameIframe = null;
+        let gameAPI = null;
+        
+        // Configuration
+        const API_BASE_URL = 'http://localhost:3000'; // Adjust as needed
+        const FRONTEND_BASE_URL = 'http://localhost:3000'; // Adjust as needed
+        
+        function log(message, type = 'info') {
+            const logDiv = document.getElementById('messageLog');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logDiv.appendChild(entry);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+        
+        function clearLog() {
+            document.getElementById('messageLog').innerHTML = '<div class="log-entry">Log cleared...</div>';
+        }
+        
+        async function loadGame() {
+            const gameType = document.getElementById('gameType').value;
+            const betAmount = document.getElementById('betAmount').value;
+            const tokenType = document.getElementById('tokenType').value;
+            
+            log(`Loading ${gameType} game...`);
+            
+            try {
+                // Create iframe URL
+                const params = new URLSearchParams({
+                    gameType,
+                    betAmount,
+                    tokenType,
+                    demo: 'true'
+                });
+                
+                const iframeUrl = `${FRONTEND_BASE_URL}/games/iframe?${params.toString()}`;
+                
+                // Create iframe
+                const iframe = document.createElement('iframe');
+                iframe.src = iframeUrl;
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.border = 'none';
+                iframe.id = `naffles-game-${gameType}-${Date.now()}`;
+                iframe.title = `Naffles ${gameType} Game`;
+                iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-popups');
+                
+                // Clear container and add iframe
+                const container = document.getElementById('gameContainer');
+                container.innerHTML = '';
+                container.appendChild(iframe);
+                
+                currentGameIframe = iframe;
+                
+                // Set up message listener
+                setupMessageListener();
+                
+                log(`${gameType} game loaded successfully`, 'success');
+                
+            } catch (error) {
+                log(`Error loading game: ${error.message}`, 'error');
+            }
+        }
+        
+        function setupMessageListener() {
+            // Remove existing listener
+            window.removeEventListener('message', handleGameMessage);
+            
+            // Add new listener
+            window.addEventListener('message', handleGameMessage);
+            
+            // Set up game API
+            gameAPI = {
+                sendMessage: function(type, payload) {
+                    if (currentGameIframe && currentGameIframe.contentWindow) {
+                        currentGameIframe.contentWindow.postMessage({
+                            type: type,
+                            payload: payload,
+                            source: 'parent'
+                        }, '*');
+                    }
+                },
+                
+                initializeGame: function(config) {
+                    this.sendMessage('INITIALIZE_GAME', config);
+                },
+                
+                sendAction: function(action, data) {
+                    this.sendMessage('GAME_ACTION', { action, data });
+                },
+                
+                requestGameState: function() {
+                    this.sendMessage('REQUEST_GAME_STATE', {});
+                },
+                
+                pauseGame: function() {
+                    this.sendMessage('PAUSE_GAME', {});
+                },
+                
+                resumeGame: function() {
+                    this.sendMessage('RESUME_GAME', {});
+                },
+                
+                endGame: function() {
+                    this.sendMessage('END_GAME', {});
+                }
+            };
+        }
+        
+        function handleGameMessage(event) {
+            // In production, verify origin
+            // const allowedOrigins = ['http://localhost:3000', 'https://naffles.com'];
+            // if (!allowedOrigins.includes(event.origin)) return;
+            
+            const data = event.data;
+            
+            switch(data.type) {
+                case 'GAME_INITIALIZED':
+                    log('Game initialized: ' + JSON.stringify(data.payload), 'success');
+                    break;
+                    
+                case 'GAME_STATE_CHANGED':
+                    log('Game state changed: ' + JSON.stringify(data.payload));
+                    break;
+                    
+                case 'GAME_COMPLETED':
+                    log('Game completed: ' + JSON.stringify(data.payload), 'success');
+                    break;
+                    
+                case 'GAME_ERROR':
+                    log('Game error: ' + JSON.stringify(data.payload), 'error');
+                    break;
+                    
+                case 'RESIZE_REQUEST':
+                    if (currentGameIframe && data.payload.width && data.payload.height) {
+                        currentGameIframe.style.width = data.payload.width + 'px';
+                        currentGameIframe.style.height = data.payload.height + 'px';
+                        log(`Resized iframe to ${data.payload.width}x${data.payload.height}`);
+                    }
+                    break;
+                    
+                default:
+                    log('Unknown message type: ' + data.type);
+            }
+        }
+        
+        function sendGameMessage(type, payload) {
+            if (gameAPI) {
+                gameAPI.sendMessage(type, payload);
+                log(`Sent message: ${type}`);
+            } else {
+                log('Game API not initialized', 'error');
+            }
+        }
+        
+        // Initialize on page load
+        window.addEventListener('load', function() {
+            log('iFrame demo ready');
+        });
+    </script>
+</body>
+</html>

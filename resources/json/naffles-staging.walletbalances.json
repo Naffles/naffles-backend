@@ -1,0 +1,115 @@
+[{
+  "_id": {
+    "$oid": "66686f41b35087bd977525fc"
+  },
+  "userRef": {
+    "$oid": "666866e9a9407b00082a78ce"
+  },
+  "balances": {
+    "eth": "8000000000000000",
+    "sol": "0"
+  },
+  "fundingBalances": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-11T15:37:37.320Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-11T15:37:38.311Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ac63eb35087bd9775260b"
+  },
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "balances": {
+    "eth": "0",
+    "sol": "577500000"
+  },
+  "fundingBalances": {
+    "eth": "0",
+    "sol": "3000000"
+  },
+  "createdAt": {
+    "$date": "2024-06-13T10:13:18.566Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-17T08:48:40.798Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d50bfb35087bd9775261a"
+  },
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "balances": {
+    "eth": "0",
+    "sol": "94000000"
+  },
+  "fundingBalances": {
+    "eth": "0",
+    "sol": "1000000"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T08:28:47.127Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-17T08:48:14.196Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e1439b35087bd9775264d"
+  },
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "balances": {
+    "eth": "10150000000000000",
+    "sol": "0"
+  },
+  "fundingBalances": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T22:22:49.328Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T06:35:54.894Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e18ddb35087bd9775265d"
+  },
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "balances": {
+    "eth": "63060000000000000",
+    "sol": "0"
+  },
+  "fundingBalances": {
+    "eth": "0",
+    "sol": "0"
+  },
+  "createdAt": {
+    "$date": "2024-06-15T22:42:37.712Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-18T11:23:26.255Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,834 @@
+[{
+  "_id": {
+    "$oid": "666a979bf890d40008396bb1"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "username": "mightygage319_1718256811776",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-13T06:54:19.323Z"
+  },
+  "game": {
+    "$oid": "666a979af890d40008396bac"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ac68c81548000088769a4"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "username": "mightygage319_1718256811776",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-13T10:14:36.667Z"
+  },
+  "game": {
+    "$oid": "666ac68cf890d40008396d19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d5157f890d400083970d9"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T08:31:19.001Z"
+  },
+  "game": {
+    "$oid": "666d5156a9407b00082a8045"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d5270fd55050008ccc794"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "username": "mightygage319_1718256811776",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T08:36:00.067Z"
+  },
+  "game": {
+    "$oid": "666d526f8154800008876ddb"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d56fcf890d40008397180"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T08:55:24.071Z"
+  },
+  "game": {
+    "$oid": "666d56fba9407b00082a80fb"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d588e8154800008876e7f"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T09:02:06.276Z"
+  },
+  "game": {
+    "$oid": "666d588df890d400083971e7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d58e2a9407b00082a8168"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T09:03:30.421Z"
+  },
+  "game": {
+    "$oid": "666d58e18154800008876e8c"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d61848154800008876f10"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T09:40:20.100Z"
+  },
+  "game": {
+    "$oid": "666d6183f890d400083972d8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d61a5f890d400083972ea"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T09:40:53.226Z"
+  },
+  "game": {
+    "$oid": "666d61a4f890d400083972e6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6839fd55050008ccca35"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "hello there",
+  "timestamp": {
+    "$date": "2024-06-15T10:08:57.198Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d683efd55050008ccca39"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "can",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:02.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d683ffd55050008ccca3d"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "we",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:03.831Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6841fd55050008ccca41"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "test",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:05.150Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6843fd55050008ccca45"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "reloading",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:07.098Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6844fd55050008ccca49"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "of",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:08.963Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6846fd55050008ccca4d"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "messages",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:10.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6848fd55050008ccca51"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "more",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:12.878Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d684afd55050008ccca55"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "than",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:14.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d684cfd55050008ccca59"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "maybe",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:16.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d684efd55050008ccca5d"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "20",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:18.798Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6851fd55050008ccca61"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "messages",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:21.620Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6854fd55050008ccca65"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "or more",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:24.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6857fd55050008ccca69"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "please",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:27.481Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6859fd55050008ccca6d"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "so",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:29.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d685bfd55050008ccca71"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "i",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:31.705Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d685dfd55050008ccca75"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "can",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:33.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6861fd55050008ccca79"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "pass",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:37.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6862fd55050008ccca7d"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "the",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:38.608Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d6864fd55050008ccca81"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a8fd7fd55050008ccc0ff"
+  },
+  "username": "rabidapocalypse375_1718259671412",
+  "message": "ticket",
+  "timestamp": {
+    "$date": "2024-06-15T10:09:40.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e146cf890d40008397543"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T22:23:40.110Z"
+  },
+  "game": {
+    "$oid": "666e146ba9407b00082a8421"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e1937a9407b00082a8477"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T22:44:07.445Z"
+  },
+  "game": {
+    "$oid": "666e1936fd55050008cccc19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e196da9407b00082a8485"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-15T22:45:01.998Z"
+  },
+  "game": {
+    "$oid": "666e196d815480000887716b"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e76d8815480000887720c"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T05:23:36.196Z"
+  },
+  "game": {
+    "$oid": "666e76d7a9407b00082a856f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e76dd815480000887721a"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "username": "sandycinch409_1718490002790",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T05:23:41.721Z"
+  },
+  "game": {
+    "$oid": "666e76dda9407b00082a8577"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7b27a9407b00082a85bf"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "username": "sandycinch409_1718490002790",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T05:41:59.879Z"
+  },
+  "game": {
+    "$oid": "666e7b27a9407b00082a85ba"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e7beea9407b00082a85fe"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "username": "sandycinch409_1718490002790",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T05:45:18.633Z"
+  },
+  "game": {
+    "$oid": "666e7bedfd55050008cccd0c"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e80b2a9407b00082a869e"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:05:38.412Z"
+  },
+  "game": {
+    "$oid": "666e80b1a9407b00082a869a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e80cda9407b00082a86b1"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:06:05.876Z"
+  },
+  "game": {
+    "$oid": "666e80cda9407b00082a86ac"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e823fa9407b00082a8755"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "username": "sandycinch409_1718490002790",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:12:15.138Z"
+  },
+  "game": {
+    "$oid": "666e823e81548000088773f7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e86cd8154800008877439"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:31:41.088Z"
+  },
+  "game": {
+    "$oid": "666e86ccf890d400083976f0"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8890fd55050008ccce3c"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "username": "sandycinch409_1718490002790",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:39:12.839Z"
+  },
+  "game": {
+    "$oid": "666e8890fd55050008ccce37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e88bef890d40008397764"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:39:58.650Z"
+  },
+  "game": {
+    "$oid": "666e88befd55050008ccce52"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8902f890d40008397768"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480_1718489560170",
+  "message": "huy",
+  "timestamp": {
+    "$date": "2024-06-16T06:41:06.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e891afd55050008ccce66"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e1393fd55050008cccbd8"
+  },
+  "username": "sandycinch409_1718490002790",
+  "message": "bat",
+  "timestamp": {
+    "$date": "2024-06-16T06:41:30.009Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8b1581548000088774c4"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480517184",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:49:57.977Z"
+  },
+  "game": {
+    "$oid": "666e8b15f890d4000839778a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666e8b2b81548000088774ca"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoorman480517184",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T06:50:19.110Z"
+  },
+  "game": {
+    "$oid": "666e8b2afd55050008ccceb7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ec8e38154800008877562"
+  },
+  "profileImage": "uploads/profile-pictures/images.webp",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoormann48051718",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T11:13:39.515Z"
+  },
+  "game": {
+    "$oid": "666ec8e2815480000887755d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ec943a9407b00082a88e2"
+  },
+  "profileImage": "uploads/profile-pictures/images.webp",
+  "userRef": {
+    "$oid": "666e11d8a9407b00082a83b9"
+  },
+  "username": "hinddoormann48051718",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T11:15:15.316Z"
+  },
+  "game": {
+    "$oid": "666ec942fd55050008cccf3c"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666ed9e8f890d400083978a1"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "username": "al_test1",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-16T12:26:16.697Z"
+  },
+  "game": {
+    "$oid": "666ed9e8f890d4000839789d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667151a8f890d40008397a3c"
+  },
+  "profileImage": "",
+  "userRef": {
+    "$oid": "666a84acfd55050008ccc074"
+  },
+  "username": "al_test1",
+  "message": "testGame",
+  "timestamp": {
+    "$date": "2024-06-18T09:21:44.485Z"
+  },
+  "game": {
+    "$oid": "667151a78154800008877778"
+  },
+  "__v": 0
+}]

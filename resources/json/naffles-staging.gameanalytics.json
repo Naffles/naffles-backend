@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "666a906afd55050008ccc15a"
+  },
+  "totalGames": 42,
+  "totalPayout": "12052660000067900000",
+  "rockPaperScissorsGames": 14,
+  "coinTossGames": 28,
+  "__v": 0
+}]

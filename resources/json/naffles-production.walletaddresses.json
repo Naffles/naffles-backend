@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "667175fdd9ee2c002b81d2de"
+  },
+  "userRef": {
+    "$oid": "667175fdd9ee2c002b81d2dc"
+  },
+  "address": "AiVevrCfbBUTVXaFtjeb2amf4bvKx89zpQQcjLub7PhD",
+  "walletType": "phantom",
+  "network": "sol",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6671762305c069002b4875a9"
+  },
+  "userRef": {
+    "$oid": "66716335aef0c1002bcdb0c3"
+  },
+  "address": "EZDSJaFGjpnaYjC15yY1QgkxfiEo5XBhpRZzqQjgCTD3",
+  "walletType": "phantom",
+  "network": "sol",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66717b4ac5ace1002a9cf89b"
+  },
+  "userRef": {
+    "$oid": "66715f38f98d0e002b9ff648"
+  },
+  "address": "CZMsxyqQVUm9Guhv5T87n9y65ggdCGcJZu2PPqzMVARN",
+  "walletType": "phantom",
+  "network": "sol",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667184018eaec0002b517675"
+  },
+  "userRef": {
+    "$oid": "6671836ed9ee2c002b81d573"
+  },
+  "address": "EB6kG6heex5GDX55hanmUXsh6M5gdNeeNcifPL6pNgHa",
+  "walletType": "phantom",
+  "network": "sol",
+  "__v": 0
+}]

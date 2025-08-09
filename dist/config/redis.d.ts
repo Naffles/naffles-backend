@@ -1,0 +1,54 @@
+import Redis from 'ioredis';
+import Redlock from 'redlock';
+declare class RedisManager {
+    private static instance;
+    private client;
+    private pubClient;
+    private subClient;
+    private redlock;
+    private isConnected;
+    private constructor();
+    static getInstance(): RedisManager;
+    private getRedisConfig;
+    initialize(): Promise<void>;
+    private setupEventListeners;
+    getClient(): Redis;
+    getPubSubClients(): {
+        pubClient: Redis;
+        subClient: Redis;
+    };
+    getRedlock(): Redlock;
+    set(key: string, value: string, ttlSeconds?: number): Promise<void>;
+    get(key: string): Promise<string | null>;
+    del(key: string): Promise<number>;
+    exists(key: string): Promise<number>;
+    incr(key: string): Promise<number>;
+    expire(key: string, seconds: number): Promise<number>;
+    ttl(key: string): Promise<number>;
+    hset(key: string, field: string, value: string): Promise<number>;
+    hget(key: string, field: string): Promise<string | null>;
+    hgetall(key: string): Promise<Record<string, string>>;
+    hdel(key: string, field: string): Promise<number>;
+    lpush(key: string, value: string): Promise<number>;
+    rpush(key: string, value: string): Promise<number>;
+    lpop(key: string): Promise<string | null>;
+    rpop(key: string): Promise<string | null>;
+    lrange(key: string, start: number, stop: number): Promise<string[]>;
+    sadd(key: string, member: string): Promise<number>;
+    srem(key: string, member: string): Promise<number>;
+    smembers(key: string): Promise<string[]>;
+    sismember(key: string, member: string): Promise<number>;
+    disconnect(): Promise<void>;
+    isRedisConnected(): boolean;
+    getConnectionStatus(): string;
+}
+declare const redisManager: RedisManager;
+declare const getAsync: (key: string) => Promise<string | null>;
+declare const setAsync: (key: string, value: string) => Promise<void>;
+declare const incrAsync: (key: string) => Promise<number>;
+declare const expireAsync: (key: string, seconds: number) => Promise<number>;
+declare const ttlAsync: (key: string) => Promise<number>;
+declare const delAsync: (key: string) => Promise<number>;
+export { RedisManager, redisManager, getAsync, setAsync, incrAsync, expireAsync, ttlAsync, delAsync };
+export default redisManager;
+//# sourceMappingURL=redis.d.ts.map
